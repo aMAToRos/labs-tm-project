@@ -15,7 +15,14 @@ Projekt zakłada zbudowanie pojazdu (w tym przypadku samochodziku), który przy 
 
 ![schemat samochody bt v1_bb](https://user-images.githubusercontent.com/93213017/153260119-1e250e31-ca7c-4402-b123-5abc05e6c8df.jpg)
 
+### Aplikacja na telefon
+![](https://qr.net/code/logo/6ain59.png)
+
+https://play.google.com/store/apps/details?id=braulio.calle.bluetoothRCcontroller
+
+
 ### Kod programu został napisany dla Arduino:
+*Kod został dostosowany do pokazanej powyżej aplikacji*
 
 ```
 // TX RX bibliotego software dla bluetooth
@@ -137,8 +144,6 @@ void loop(){
   }
 }
 ```
-### Aplikacja na telefon
-Powyższy kod został dostosowany do pokazanej aplikacji
 
 ### Finalny efekt:
 
