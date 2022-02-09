@@ -1,7 +1,7 @@
 # Zdalnie sterowany pojazd przez smatfona
-Projekt zakłada zbudowanie pojazdu (w tym przypadku samochodziku), który przy użyciu smartfona będzie można przez bluetooth sterować pojazdem.
+Projekt zakłada zbudowanie pojazdu (w tym przypadku samochodziku), który przy użyciu smartfona będzie można sterować pojazdem przez bluetooth.
 
-Użyte elementy:
+### Użyte elementy:
   - Arduino Uno
   - L298N (moduł do sterowania silnikami)
   - HC-05 (moduł bluetooth)
@@ -11,9 +11,11 @@ Użyte elementy:
   - szkielet jakiegoś pojazdu (może to być jakiś stary samochodzik)
   - trochę cierpliwości 😜
 
-Zastosowany schemat:
+### Zastosowany schemat:
 
 ![schemat samochody bt v1_bb](https://user-images.githubusercontent.com/93213017/153260119-1e250e31-ca7c-4402-b123-5abc05e6c8df.jpg)
+
+### Kod programu został napisany dla Arduino:
 
 ```
 // TX RX bibliotego software dla bluetooth
@@ -58,9 +60,7 @@ void loop(){
   if(bluetooth.available() > 0){  //sprawdzenie, czy dostępne sa jakies dane
     command = bluetooth.read();   //przechowywanie danych w zmiennej „polecenie”
     Serial.println(command);      //uzycie zmiennej
-    
-    //Change pin mode only if new command is different from previous.   
-    switch(command){
+    {
     case 'F':  //do przodu
       digitalWrite(Motor2_Pin2, LOW);
       digitalWrite(Motor2_Pin1, HIGH);
@@ -137,5 +137,10 @@ void loop(){
   }
 }
 ```
-Finalny efekt:
-Przemyślenia:
+### Aplikacja na telefon
+Powyższy kod został dostosowany do pokazanej aplikacji
+
+### Finalny efekt:
+
+### Przemyślenia:
+Kod można jak i sam samochodzik wzbogacić o klakson oraz oświetlenie
