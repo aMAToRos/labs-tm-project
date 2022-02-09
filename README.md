@@ -1,5 +1,5 @@
 # Zdalnie sterowany pojazd przez smatfona
-Projekt zakłada zbudowanie pojazdu (w tym przypadku samochodziku), który przy użyciu smartfona będzie można sterować pojazdem przez bluetooth.
+Projekt zakłada zbudowanie pojazdu (w tym przypadku samochodziku), który przy użyciu smartfona (na androidzie) będzie można sterować pojazdem przez bluetooth.
 
 ### Użyte elementy:
   - Arduino Uno
@@ -16,13 +16,24 @@ Projekt zakłada zbudowanie pojazdu (w tym przypadku samochodziku), który przy 
 ![schemat samochody bt v1_bb](https://user-images.githubusercontent.com/93213017/153260119-1e250e31-ca7c-4402-b123-5abc05e6c8df.jpg)
 
 ### Aplikacja na telefon
-![](https://qr.net/code/logo/6ain59.png)
+
+![6ain59(2)](https://user-images.githubusercontent.com/93213017/153293470-ce78e69a-5e88-4fc2-affb-07d0d1c63824.png)
 
 https://play.google.com/store/apps/details?id=braulio.calle.bluetoothRCcontroller
 
+Jak połączyć się z modułem bluetooth?
+  1. Pobieramy aplikacje
+  2. Na smartfonie włączamy bluetooth
+  3. W wyszukiwaniu urządzeń na bluetooth szukamy urządzenia HC-05, hasło to: 1234
+  4. Włączamy aplikacje
+  5. Naciskamy na zębadkę
+  6. Po otworzeniu się "Option Menu" naciskamy "Connect to car" i wybieramy "HC-05"
+  7. Powinien pokazać się komunikat o sukcesie połączenia z urządzeniem
 
-### Kod programu został napisany dla Arduino:
-*Kod został dostosowany do pokazanej powyżej aplikacji*
+### Kod programu:
+*Został napisany dla Arduino, kod został dostosowany do pokazanej powyżej aplikacji Link do oprogramowania arduino* 
+
+https://www.arduino.cc/en/software
 
 ```
 // TX RX bibliotego software dla bluetooth
@@ -148,4 +159,5 @@ void loop(){
 ### Finalny efekt:
 
 ### Przemyślenia:
-Kod można jak i sam samochodzik wzbogacić o klakson oraz oświetlenie
+Kod można jak i sam samochodzik wzbogacić o klakson oraz oświetlenie.
+Zasilanie pojazdu bym rozdzielił na 9V i 12V-48V dla modułu L298N (zwiększy to moc dla silników)
