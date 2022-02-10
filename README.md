@@ -163,4 +163,4 @@ void loop(){
 
 ### Przemyślenia:
 Kod można jak i sam samochodzik wzbogacić o klakson oraz oświetlenie.
-Zasilanie pojazdu bym rozdzielił na 9V i 12V-48V dla modułu L298N (zwiększy to moc dla silników)
+Zasilanie pojazdu bym rozdzielił na 9V (dla Arduino) i 12V-48V dla modułu L298N (zwiększy to moc dla silników)
