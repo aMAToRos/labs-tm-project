@@ -158,6 +158,10 @@ void loop(){
 
 ### Finalny efekt:
 
+![273467093_704789580687598_9177932645936275417_n](https://user-images.githubusercontent.com/93213017/153434987-0224e989-7ae4-4859-b4f4-8059d7e75727.jpg)
+![273262866_657633622044737_2746898867994527694_n](https://user-images.githubusercontent.com/93213017/153435147-871bfd44-da55-4608-a186-a1ed19dc3d36.jpg)
+
+
 ### Przemyślenia:
 Kod można jak i sam samochodzik wzbogacić o klakson oraz oświetlenie.
 Zasilanie pojazdu bym rozdzielił na 9V i 12V-48V dla modułu L298N (zwiększy to moc dla silników)
